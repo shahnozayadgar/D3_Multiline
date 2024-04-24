@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <meta charset = "UTF-8">
+        <title>Fine Line Chart</title>
+        <style>
+            rect {
+                pointer-events: all;
+                fill-opacity: 0;
+                stroke-opacity: 0;
+                z-index: 1;
+            }
+            .tooltip {
+                position: absolute;
+                padding: 10px;
+                background-color: steelblue;
+                color: white;
+                border: 1px solid white;
+                border-radius: 10px;
+                display: none;
+                opacity: .75;
+            }
+            button {
+                margin-top: 10px;
+            }
+        </style>
+    </head> 
+    <body>
+        <div id="chart-container" style="width: 1200px; height: 500px;"></div>
+        <button id="back">Back</button>
+        <button id="next">Next</button>
+        <script src="https://d3js.org/d3.v7.min.js"></script>
+        <script src="example.js"></script>
+    </body>
+</html>
